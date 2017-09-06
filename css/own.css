@@ -1,0 +1,59 @@
+.o_imgArgos{
+    max-width: 50%;
+}
+.o_img100{
+    width: 100%;
+}
+.o_hr{
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.3);;
+    margin: 40px 0;
+}
+
+.text-primary{
+    color: #9575CD;
+}
+
+@font-face {
+    font-family: 'Thinking_of_Betty';
+    src: url('../fonts/Thinking_of_Betty.ttf');
+}
+.o_headerBg{
+    background: url(../img/headerBg.png) no-repeat center center scroll;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.o_headerBg h1{
+    font-family: 'Thinking_of_Betty';
+    font-size: 50px;
+    font-weight: 500;
+}
+.o_downloadBg{
+    background: url(../img/headerBg.png) no-repeat center center scroll;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.o_conceptBg{
+    background: url(../img/featuresBg.jpg) no-repeat center center scroll;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
