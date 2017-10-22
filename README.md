@@ -5,11 +5,11 @@
 
 2 - build the docker image
 ```
-docker build -t webCommonRoutes .
+docker build -t webcommonroutes .
 ```
 3 - launch a container with the image
 ```
-docker run -ti -d -p 80:8080 webCommonRoutes
+docker run -ti -d -p 80:8080 webcommonroutes
 ```
 
 The landingpage && webapp will be able in the ip/domain.
