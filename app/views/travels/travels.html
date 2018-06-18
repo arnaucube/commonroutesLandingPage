@@ -13,23 +13,30 @@
                                 <th>From</th>
                                 <th>To</th>
                                 <th>Date</th>
-                                <!-- <th>User</th> -->
+                                <th>User</th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr ng-repeat="travel in travels">
                                 <td>
-                                    <i ng-show="travel.type=='offering'" class="fa fa-car fa-2x"></i>
-                                    <i ng-show="travel.type=='asking'" class="fa fa-question fa-2x"></i>
-                                    <i ng-show="travel.type=='package'" class="fa fa-archive fa-2x"></i>
+                                    <i title="offer travel" ng-show="travel.type=='offering'" class="fa fa-car fa-2x"></i>
+                                    <i title="ask for travel" ng-show="travel.type=='asking'" class="fa fa-question fa-2x"></i>
+                                    <i title="ask to send package" ng-show="travel.type=='package'" class="fa fa-archive fa-2x"></i>
                                 </td>
                                 <td>{{travel.from.name}}</td>
                                 <td>{{travel.to.name}}</td>
                                 <td>{{travel.date | date:'yyyy/MM/dd'}}</td>
-                                <!-- <td>
-                                  <img style="width:30px;" ng-src="{{travel.user.avatar}}" title="{{travel.user.username}}">
-                                </td> -->
+                                <td>
+                                  <div class="row">
+                                    <div class="col-sm-6">
+                                      <img style="width:30px;border-radius: 50%;" ng-src="{{travel.user.avatar}}" title="{{travel.user.username}}">
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <i title="user verified" class="fa fa-check-circle" style="color: #64B5F6;"></i>
+                                    </div>
+                                  </div>
+                                </td>
                                 <td><a ng-href="#!/travel/{{travel._id}}">View</a></td>
                             </tr>
                         </tbody>

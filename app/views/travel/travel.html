@@ -5,18 +5,19 @@
           <div class="panel">
               <div class="panel-body">
                 <div class="pull-right">
-                  <!-- <div class="row-picture" style="font-size:140%; text-align:right;" title="user">
-                      <img style="width:40px;" class="circle" ng-src="{{travel.user.avatar}}" alt="icon"> {{travel.user.username}}
-                  </div> -->
+                  <div class="row-picture" style="font-size:120%; text-align:right;" title="user">
+                      <img style="width:40px;border-radius: 50%;" class="circle" ng-src="{{travel.user.avatar}}" alt="icon"> {{travel.user.username}}
+                      <i title="user verified" class="fa fa-check-circle" style="color: #64B5F6;"></i>
+                  </div>
                   {{travel.date | date:"dd/MM HH:mm a"}}
                 </div>
                   <div class="list-group">
                       <div class="list-group-item">
                         <div class="pull-right"></div>
                         <h4>
-                          <i ng-show="travel.type=='offering'" class="fa fa-car fa-2x"></i>
-                          <i ng-show="travel.type=='asking'" class="fa fa-question fa-2x"></i>
-                          <i ng-show="travel.type=='package'" class="fa fa-archive fa-2x"></i>
+                          <i title="offer travel" ng-show="travel.type=='offering'" class="fa fa-car fa-2x"></i>
+                          <i title="ask for travel" ng-show="travel.type=='asking'" class="fa fa-question fa-2x"></i>
+                          <i title="ask to send package" ng-show="travel.type=='package'" class="fa fa-archive fa-2x"></i>
                           {{travel.title}}
                         </h4>
                       </div>
